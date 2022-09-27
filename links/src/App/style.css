@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 .app {
     width: 100vw;
     height: 100vh;
@@ -13,16 +16,18 @@
 }
 
 .link {
+    font-family: 'Dancing Script', sans-serif  ;
     color: white;
+    border-radius: 1rem ;
     border: 2px solid white;
     width: 90%;
     height: 3rem;
     margin:auto;
     margin-bottom: 10%;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    
 }
 
 
@@ -52,6 +57,12 @@ a{
     color: white;
 }
 
+.resize {
+    width: 10%;
+    margin-right: 5%;
+    margin-left: 20%;
+}
+
 
 @media only screen and (min-width: 600px) {
     .circle {
@@ -65,6 +76,29 @@ a{
         background-color: black;
     
     }
+    .link {
+        height: 6rem;
+        margin:auto;
+        margin-bottom: 10%;
+        font-size: 2.5rem;
+    }
+
+    .pseudo{
+        margin-bottom: 10%;
+        font-weight: bold;
+        font-size:1.2rem;
+        margin-top: 0%;
+        font-size: 2rem;
+       
+    }
+
+    .resize {
+        width: 8%;
+    }
+
+    .circle{
+        margin-bottom: 2%;
+    }
   }
 
   @media only screen and (min-width: 1280px) {
@@ -76,4 +110,30 @@ a{
         margin-left: 50%;
         transform: translateX(-50%);    
     }
+    
+  }
+
+  
+  @media (max-device-width: 1024px) and (orientation: landscape) {
+    .app {     
+        overflow-y: scroll;
+    }
+
+    .circle {
+        margin-top: 30%;
+        margin-bottom: 1%;
+    }
+
+    .pseudo{
+       margin-top: 0%;
+       margin-bottom: 10%;
+    }
+
+    .link {
+        height: 7rem;
+        margin:auto;
+        margin-bottom: 10%;
+        font-size: 3rem;
+    }
+    
   }
