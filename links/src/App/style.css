@@ -68,7 +68,7 @@ a{
     font-family: 'Dancing Script',sans-serif;
     border-radius: 2rem ;
     border: 2px solid white;
-    width: 90%;
+    width: 91.12%;
     height: 3.25rem;
     margin:auto;
     margin-bottom: 10%;
@@ -78,6 +78,18 @@ a{
     background-color: pink;
 }
 
+.advise {
+    color: white;
+    text-align: center;
+    margin-bottom: 5%;
+    font-weight: bold;
+    font-size:1.2rem;
+    margin-top: 2%;
+}
+
+span {
+    font-weight:bold;
+}
 
 @media only screen and (min-width: 600px) {
     .circle {
@@ -114,6 +126,20 @@ a{
     .circle{
         margin-bottom: 2%;
     }
+
+    .button {
+        width: 90.5%;
+        height: 6.25rem;
+        font-size: 3rem;
+        border-radius: 4rem;
+    }
+
+    .advise {
+       
+        font-weight: bold;
+        font-size:2rem;
+        margin-top: 2%;
+    }
   }
 
   @media only screen and (min-width: 1280px) {
@@ -128,6 +154,10 @@ a{
 
     .link {
         border-radius: 4rem ;
+    }
+
+    .button {
+        font-size: 2.5rem;
     }
     
   }
@@ -154,6 +184,13 @@ a{
         margin-bottom: 10%;
         font-size: 3rem;
         border-radius: 4rem ;
+    }
+
+    .button {
+        width: 91.12%;
+        height: 7.625rem;
+        font-size: 3rem;
+        border-radius: 4rem;
     }
     
   }

@@ -18,6 +18,7 @@ function App() {
           <img className="resize" src={arrayItem.logo} alt="logo insta" />
           <a href={ arrayItem.link }>{ arrayItem.description }</a>
         </div>))}
+        <p className="advise"><span>&darr;</span> BIENTÔT DISPONIBLE <span>&darr;</span> </p>
         <button className="button" onClick=""> <img className="resize" src={ shop } alt="logo insta" />Mes patrons offerts</button>
       </div>
     </div>
