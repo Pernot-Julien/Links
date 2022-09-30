@@ -38,8 +38,6 @@
     border-radius: 50%;
     margin-left: 50%;
     transform: translateX(-50%);
- 
-
 }
 
 .pseudo{
@@ -129,13 +127,28 @@ span {
     font-weight:bold;
 }
 
+.return-button {
+    color: pink;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 1rem;
+
+}
+
+.return {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* design desktop version */
+
 @media only screen and (min-width: 600px) {
     .circle {
         border: solid 5px white;
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        margin-bottom: 10%;
         margin-left: 50%;
         transform: translateX(-50%);
     
@@ -161,9 +174,6 @@ span {
         width: 8%;
     }
 
-    .circle{
-        margin-bottom: 2%;
-    }
 
     .button {
         width: 90.5%;
@@ -179,7 +189,13 @@ span {
         margin-top: 2%;
     }
   }
+
+
+/* display pdf portrait page ipad version */
   @media only screen and (min-width: 768px){
+    .app {
+        overflow-y: hidden;
+    }
  
     .pdf-photo {
         width: 45%;
@@ -192,6 +208,7 @@ span {
     .download-button {
         height: 3rem;
         font-size: 1.5rem;
+        margin-bottom: 5%;
     }
 
     .link {
@@ -203,7 +220,16 @@ span {
         width: 70%;
         font-size: 2.5rem;
     }
+
+    .return-button {
+        width: 6rem;
+        height: 2.5rem;
+        border-radius: 2rem;
+    }
 }
+
+
+/* display desktop application to mobile version ==> 600px */
 
   @media only screen and (min-width: 1280px) {
     .app {
@@ -225,26 +251,17 @@ span {
     
   }
 
-  @media (max-device-width: 1023px) and (orientation: landscape) {
-    .app {     
-        overflow-y: scroll;}
 
-    .circle {
-            margin-top: 70%;
-            margin-bottom: 1%;     
-    } 
-    .pdf-photo {
-        width: 35%;
-    }
 
-}
-  @media (max-device-width: 1024px) and (orientation: landscape) {
+
+  @media (max-device-width: 768px) and (orientation: landscape) {
     .app {     
         overflow-y: scroll;
+        height: 1000px;
     }
 
     .circle {
-        margin-top: 45%;
+        margin-top: 75%;
         margin-bottom: 1%;
     }
 
@@ -254,18 +271,18 @@ span {
     }
 
     .link {
-        height: 7rem;
+        height: 5rem;
         width: 70%;
         margin:auto;
         margin-bottom: 10%;
-        font-size: 3rem;
+        font-size: 2.2rem;
         border-radius: 4rem ;
     }
 
     .button {
         width: 70%;
-        height: 7.625rem;
-        font-size: 3rem;
+        height: 5rem;
+        font-size: 2.2rem;
         border-radius: 4rem;
     }
 
@@ -280,6 +297,13 @@ span {
 
     .pdf-title {
         font-size: 2.5rem;
+    }
+
+    .return-button {
+        height: 3rem;
+        width: 7rem;
+        border-radius: 2rem;
+        font-size: 1.3rem;
     }
     
   }
