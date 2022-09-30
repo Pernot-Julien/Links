@@ -3,8 +3,8 @@ import pochette from '../Assets/Images/pochette_summer.png'
 import array from '../Data/index'
 import photo from '../Assets/Images/photo.png'
 import gift from '../Assets/Images/gift.png'
+
 import pdf from '../Assets/Download/pochette_summer.pdf';
-//import insta from '../Assets/Images/insta.png'
 import './style.css';
 
 
@@ -34,13 +34,11 @@ function App() {
         <div className="link">
           <img className="resize" src={arrayItem.logo} alt="logo insta" />
           <a href={ arrayItem.link }>{ arrayItem.description }</a>
-        </div>))}
-
+        </div>))
         {!display && 
         <>
         <button className="button" onClick={ handleDisplay }><img className="resize" src={ gift } alt="logo insta" />Mes     patrons offerts</button>
         </>}
-        
       </div>
     </div>
   );
