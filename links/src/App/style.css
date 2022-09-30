@@ -78,6 +78,44 @@ a{
     background-color: pink;
 }
 
+.download-button {
+    color:white;
+    font-family: 'Dancing Script',sans-serif;
+    border-radius: 2rem ;
+    border: 2px solid white;
+    width: 50%;
+    height: 2rem;
+    margin:auto;
+    margin-bottom: 10%;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: pink;
+    justify-content: center;
+}
+
+.pdf {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pdf-photo {
+    border : 2px solid white;
+    border-radius: 1rem;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 7%;
+}
+
+.pdf-title {
+    margin:auto;
+    color:white;
+    margin-bottom: 5%;
+    font-size: 1.5rem;
+    font-family: ;
+}
+
 .advise {
     color: white;
     text-align: center;
@@ -141,6 +179,31 @@ span {
         margin-top: 2%;
     }
   }
+  @media only screen and (min-width: 768px){
+ 
+    .pdf-photo {
+        width: 45%;
+    }
+
+    .pdf-title {
+        font-size: 2rem;
+    }
+
+    .download-button {
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+
+    .link {
+        height: 6rem;
+        width: 70%;
+    }
+
+    .button {
+        width: 70%;
+        font-size: 2.5rem;
+    }
+}
 
   @media only screen and (min-width: 1280px) {
     .app {
@@ -162,14 +225,26 @@ span {
     
   }
 
-  
+  @media (max-device-width: 1023px) and (orientation: landscape) {
+    .app {     
+        overflow-y: scroll;}
+
+    .circle {
+            margin-top: 70%;
+            margin-bottom: 1%;     
+    } 
+    .pdf-photo {
+        width: 35%;
+    }
+
+}
   @media (max-device-width: 1024px) and (orientation: landscape) {
     .app {     
         overflow-y: scroll;
     }
 
     .circle {
-        margin-top: 30%;
+        margin-top: 45%;
         margin-bottom: 1%;
     }
 
@@ -180,6 +255,7 @@ span {
 
     .link {
         height: 7rem;
+        width: 70%;
         margin:auto;
         margin-bottom: 10%;
         font-size: 3rem;
@@ -187,10 +263,23 @@ span {
     }
 
     .button {
-        width: 91.12%;
+        width: 70%;
         height: 7.625rem;
         font-size: 3rem;
         border-radius: 4rem;
+    }
+
+    .download-button {
+        height: 4rem;
+        font-size: 2rem;
+    }
+
+    .pdf-photo {
+        width: 40%;
+    }
+
+    .pdf-title {
+        font-size: 2.5rem;
     }
     
   }
