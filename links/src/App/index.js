@@ -11,6 +11,9 @@ import './style.css';
 function App() {
   const [display, setDisplay] = useState(false);
 
+  const handleReturn = (event) => {
+    setDisplay(display => false)
+  };
   const handleDisplay = (event) => {
     setDisplay(display => true);
   };
@@ -23,11 +26,16 @@ function App() {
           alt="Portrait"/>
         <p className="pseudo">@mes.ptits.bonheurs.diy</p>
         {display && 
+        <>
           <div className="pdf">
             <p className='pdf-title'>Pochette summer</p>
             <img src={ pochette } alt="pochette summer" className='pdf-photo'/>
             <button className="download-button"><a href={ pdf } download>Télécharger le PDF</a></button>
+          </div >
+          <div className='return'>
+          <button className='return-button' onClick={ handleReturn }>Retour</button>
           </div>
+        </>
         }
           {!display && array.map(
             (arrayItem) => (
