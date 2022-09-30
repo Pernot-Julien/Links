@@ -21,7 +21,7 @@ function App() {
         <img className="circle"
           src={ photo }
           alt="Portrait"/>
-        <p className="pseudo">Mes.ptits.bonheurs.diy</p>
+        <p className="pseudo">@mes.ptits.bonheurs.diy</p>
         {display && 
           <div className="pdf">
             <p className='pdf-title'>Pochette summer</p>
