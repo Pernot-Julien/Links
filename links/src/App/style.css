@@ -9,11 +9,6 @@
     
 }
 
-.linkgroup{
-    margin-top: 50vh;
-    transform: translateY(-50%);
-    background-color: pink;
-}
 
 .link {
     font-family: 'Dancing Script', sans-serif  ;
@@ -32,6 +27,7 @@
 
 
 .circle {
+    margin-top: 30%;
     border: solid 3px white;
     width: 120px;
     height: 120px;
@@ -56,7 +52,7 @@ a{
 }
 
 .resize {
-    width: 10%;
+    width: 8%;
     margin-right: 5%;
     margin-left: 20%;
 }
@@ -138,12 +134,13 @@ span {
 .return {
     display: flex;
     justify-content: center;
+    margin-bottom: 10%;
 }
 
 
 /* design desktop version */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 767 px) {
     .circle {
         border: solid 5px white;
         width: 200px;
@@ -151,6 +148,7 @@ span {
         border-radius: 50%;
         margin-left: 50%;
         transform: translateX(-50%);
+        margin-top: 10%;
     
     }
     .link {
@@ -188,17 +186,21 @@ span {
         font-size:2rem;
         margin-top: 2%;
     }
+
+    .app {
+        overflow-y: scroll;
+    }
   }
 
 
 /* display pdf portrait page ipad version */
   @media only screen and (min-width: 768px){
     .app {
-        overflow-y: hidden;
+        overflow-y: scroll;
     }
  
     .pdf-photo {
-        width: 45%;
+        width: 35%;
     }
 
     .pdf-title {
@@ -206,19 +208,23 @@ span {
     }
 
     .download-button {
-        height: 3rem;
-        font-size: 1.5rem;
+        height: 4rem;
+        font-size: 1.87rem;
         margin-bottom: 5%;
     }
 
     .link {
-        height: 6rem;
+        height: 5rem;
         width: 70%;
+        border-radius: 3rem;
+        font-size: 2.5rem;
     }
 
     .button {
         width: 70%;
         font-size: 2.5rem;
+        height: 5rem;
+        border-radius: 3rem;
     }
 
     .return-button {
@@ -226,32 +232,18 @@ span {
         height: 2.5rem;
         border-radius: 2rem;
     }
-}
 
-
-/* display desktop application to mobile version ==> 600px */
-
-  @media only screen and (min-width: 1280px) {
-    .app {
-        width: 30vw;
-        height: 100vh;
-        overflow-y: hidden;
-        background-color: pink;
-        margin-left: 50%;
-        transform: translateX(-50%);    
+    .circle {
+        margin-top: 10%;
+        width: 25%;
+        height: 25%;
     }
 
-    .link {
-        border-radius: 4rem ;
+    .pseudo {
+        margin-bottom: 9%;
+        font-size: 2rem;
     }
-
-    .button {
-        font-size: 2.5rem;
-    }
-    
   }
-
-
 
 
   @media (max-device-width: 768px) and (orientation: landscape) {
@@ -261,13 +253,16 @@ span {
     }
 
     .circle {
-        margin-top: 75%;
+        margin-top: 15%;
         margin-bottom: 1%;
+        width: 20%;
+        height: 20%;
     }
 
     .pseudo{
        margin-top: 0%;
        margin-bottom: 10%;
+       font-size: 1.5rem;
     }
 
     .link {
@@ -304,6 +299,28 @@ span {
         width: 7rem;
         border-radius: 2rem;
         font-size: 1.3rem;
+    }
+    
+  }
+
+  /* display desktop application to mobile version ==> 600px */
+
+  @media only screen and (min-width: 1280px) {
+    .app {
+        width: 30vw;
+        height: 100vh;
+        overflow-y: hidden;
+        background-color: pink;
+        margin-left: 50%;
+        transform: translateX(-50%);    
+    }
+
+    .link {
+        border-radius: 4rem ;
+    }
+
+    .button {
+        font-size: 2.5rem;
     }
     
   }
