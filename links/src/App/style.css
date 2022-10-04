@@ -77,11 +77,11 @@ a{
     font-family: 'Dancing Script',sans-serif;
     border-radius: 2rem ;
     border: 2px solid white;
-    width: 50%;
+    width: 80%;
     height: 2rem;
     margin:auto;
-    margin-bottom: 10%;
-    font-size: 1rem;
+    margin-bottom: 20%;
+    font-size: 0.8rem;
     display: flex;
     align-items: center;
     background-color: pink;
@@ -90,24 +90,24 @@ a{
 
 .pdf {
     display:flex;
-    flex-direction: column;
-    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .pdf-photo {
     border : 2px solid white;
     border-radius: 1rem;
-    width: 60%;
+    width: 80%;
     margin: auto;
-    margin-bottom: 7%;
+    margin-bottom: 15%;
 }
 
 .pdf-title {
     margin:auto;
     color:white;
-    margin-bottom: 5%;
-    font-size: 1.5rem;
-    font-family: ;
+    margin-bottom: 15%;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .advise {
@@ -119,6 +119,10 @@ a{
     margin-top: 2%;
 }
 
+.pdf-display {
+    display: flex;
+    flex-direction: column;
+}
 span {
     font-weight:bold;
 }
@@ -169,7 +173,7 @@ span {
     }
 
     .resize {
-        width: 8%;
+        width: 15%;
     }
 
 
@@ -200,7 +204,7 @@ span {
     }
  
     .pdf-photo {
-        width: 35%;
+        width: 70%;
     }
 
     .pdf-title {
@@ -210,7 +214,7 @@ span {
     .download-button {
         height: 4rem;
         font-size: 1.87rem;
-        margin-bottom: 5%;
+        margin-bottom: 15%;
     }
 
     .link {
@@ -243,6 +247,11 @@ span {
         margin-bottom: 9%;
         font-size: 2rem;
     }
+
+    .pdf{
+        display: flex;
+        justify-content: center;
+    }
   }
 
 
@@ -262,7 +271,7 @@ span {
     .pseudo{
        margin-top: 0%;
        margin-bottom: 10%;
-       font-size: 1.5rem;
+       font-size: 2rem;
     }
 
     .link {
@@ -282,16 +291,16 @@ span {
     }
 
     .download-button {
-        height: 4rem;
-        font-size: 2rem;
+        height: 3rem;
+        font-size: 1.5rem;
     }
 
     .pdf-photo {
-        width: 40%;
+        width: 70%;
     }
 
     .pdf-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .return-button {
