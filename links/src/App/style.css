@@ -9,7 +9,6 @@
     
 }
 
-
 .link {
     font-family: 'Dancing Script', sans-serif  ;
     color: white;
@@ -188,8 +187,8 @@ span {
     text-align: justify;
     font-family: 'Dancing Script', sans-serif  ;
     font-size: 1.1;
-    margin-bottom: 10%;
-    margin-top: 15%;
+    margin-bottom: 5%;
+    margin-top: 7%;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -201,6 +200,7 @@ span {
     border: solid white 2px;
 
 }
+
 
 
 /* design desktop version */
@@ -326,7 +326,7 @@ span {
     .story {
         font-size: 1.5em;
         margin-bottom: 5%;
-        margin-top: 10%;
+        margin-top: 15%;
     }
 
     .portrait {
