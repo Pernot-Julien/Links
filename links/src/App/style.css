@@ -27,7 +27,7 @@
 
 
 .circle {
-    margin-top: 30%;
+    margin-top: 15%;
     border: solid 3px white;
     width: 120px;
     height: 120px;
@@ -441,6 +441,10 @@ span {
 
     .button {
         font-size: 2rem;
+    }
+
+    .circle {
+        margin-top: 15%;
     }
     
   }
