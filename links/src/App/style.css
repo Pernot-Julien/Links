@@ -141,6 +141,67 @@ span {
     margin-bottom: 10%;
 }
 
+.footer {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    margin-top: 20%;
+}
+
+.footer-logo {
+    display:flex;
+    align-items: center;
+    width: 40%;
+   
+}
+
+.acenter {
+    display: flex;
+    justify-content: center;
+}
+
+.tooltip {
+    position: relative;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    display: inline-block;
+    top:130%;
+    left:0%;
+    transform: translateX(-60%);
+    background-color: pink;
+    color:white;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    margin-top: 20%;
+    visibility: visible;
+  }
+
+.story {
+    color : white;
+    text-align: justify;
+    font-family: 'Dancing Script', sans-serif  ;
+    font-size: 1.1;
+    margin-bottom: 10%;
+    margin-top: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.portrait {
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+    border: solid white 2px;
+
+}
+
 
 /* design desktop version */
 
@@ -222,6 +283,7 @@ span {
         width: 70%;
         border-radius: 3rem;
         font-size: 2.5rem;
+       
     }
 
     .button {
@@ -229,6 +291,7 @@ span {
         font-size: 2.5rem;
         height: 5rem;
         border-radius: 3rem;
+        margin-bottom: 7%;
     }
 
     .return-button {
@@ -238,7 +301,7 @@ span {
     }
 
     .circle {
-        margin-top: 10%;
+        margin-top: 5%;
         width: 25%;
         height: 25%;
     }
@@ -252,6 +315,39 @@ span {
         display: flex;
         justify-content: center;
     }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        margin-top: 15%;
+        margin-bottom: 10%;
+    }
+
+    .story {
+        font-size: 1.5em;
+        margin-bottom: 5%;
+        margin-top: 10%;
+    }
+
+    .portrait {
+        width: 25%;
+    }
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        display: inline-block;
+        top:130%;
+        left:0%;
+        transform: translateX(-60%);
+        background-color: pink;
+        color:white;
+        text-align: center;
+        border-radius: 10px;
+        position: absolute;
+        z-index: 1;
+        font-size: 2rem;
+      }
+
   }
 
 
@@ -309,6 +405,20 @@ span {
         border-radius: 2rem;
         font-size: 1.3rem;
     }
+
+    .footer {
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .story {
+        font-size: 1.5em;
+    }
+
+    .tooltip .tooltiptext {
+        font-size: 1.7rem;
+      }
     
   }
 
