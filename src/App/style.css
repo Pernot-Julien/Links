@@ -9,6 +9,10 @@
     
 }
 
+.linkgroup{
+    margin-top: 12%;
+}
+
 .link {
     font-family: 'Dancing Script', sans-serif  ;
     color: white;
@@ -65,7 +69,7 @@ a{
     height: 3.25rem;
     margin:auto;
     margin-bottom: 10%;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     display: flex;
     align-items: center;
     background-color: pink;
@@ -102,7 +106,7 @@ a{
 }
 
 .pdf-title {
-    margin:auto;
+    text-align: center;
     color:white;
     margin-bottom: 15%;
     font-size: 1rem;
@@ -324,7 +328,7 @@ span {
     }
 
     .story {
-        font-size: 1.5em;
+        font-size: 1.8em;
         margin-bottom: 5%;
         margin-top: 15%;
     }
@@ -444,7 +448,10 @@ span {
     }
 
     .circle {
-        margin-top: 15%;
+        margin-top: 1%;
+    }
+    .story {
+        font-size: 1.3em;
     }
     
   }

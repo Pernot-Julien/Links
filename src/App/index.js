@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import pochette from '../Assets/Images/pochette_summer.png';
+import ophelia from '../Assets/Images/ophelia.jpg';
 import heart from '../Assets/Images/ptits_coeurs.png';
 import array from '../Data/index';
 import photo from '../Assets/Images/photo.png';
@@ -11,6 +12,7 @@ import book from '../Assets/Images/book.png';
 import mail from '../Assets/Images/mail.png';
 import pdfSummer from '../Assets/Download/pochette_summer.pdf';
 import pdfCoeur from '../Assets/Download/ptits_coeurs.pdf';
+import pdfOphelia from '../Assets/Download/Ophelia.pdf';
 //import insta from '../Assets/Images/insta.png'
 import './style.css';
 
@@ -53,6 +55,11 @@ function App() {
             <p className='pdf-title'>Mes ptits coeurs</p>
               <img src={ heart } alt="mes ptits coeurs" className='pdf-photo'/>
               <button className="download-button"><a href={ pdfCoeur } download>Télécharger le PDF</a></button>
+            </div>
+            <div className="pdf-display">
+            <p className='pdf-title'>Poupée Ophélia</p>
+              <img src={ ophelia } alt="mes ptits coeurs" className='pdf-photo'/>
+              <button className="download-button"><a href={ pdfOphelia } download>Télécharger le PDF</a></button>
             </div>
           </div >
           <div className='return'>
