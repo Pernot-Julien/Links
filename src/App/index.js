@@ -4,6 +4,7 @@ import ophelia from '../Assets/Images/ophelia.jpg';
 import heart from '../Assets/Images/ptits_coeurs.png';
 import array from '../Data/index';
 import photo from '../Assets/Images/photo.png';
+import site from '../Assets/Images/site.png'
 import gift from '../Assets/Images/gift.png';
 import insta from '../Assets/Images/insta.png';
 import portrait from '../Assets/Images/portrait.jpg';
@@ -57,7 +58,7 @@ function App() {
               <button className="download-button"><a href={ pdfCoeur } download>Télécharger le PDF</a></button>
             </div>
             <div className="pdf-display">
-            <p className='pdf-title'>Poupée Ophélia</p>
+            <p className='pdf-title'>Ophélia</p>
               <img src={ ophelia } alt="mes ptits coeurs" className='pdf-photo'/>
               <button className="download-button"><a href={ pdfOphelia } download>Télécharger le PDF</a></button>
             </div>

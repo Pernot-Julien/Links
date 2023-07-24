@@ -10,7 +10,7 @@
 }
 
 .linkgroup{
-    margin-top: 12%;
+    margin-top: 3%;
 }
 
 .link {
@@ -107,6 +107,7 @@ a{
 
 .pdf-title {
     text-align: center;
+    height: 20%;
     color:white;
     margin-bottom: 15%;
     font-size: 1rem;
@@ -350,6 +351,10 @@ span {
         position: absolute;
         z-index: 1;
         font-size: 2rem;
+      }
+      
+      a{
+        font-size: 0.6em;
       }
 
   }
