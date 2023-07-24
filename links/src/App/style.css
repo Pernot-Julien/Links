@@ -1,0 +1,450 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.app {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    background-color: pink;
+    
+}
+
+.link {
+    font-family: 'Dancing Script', sans-serif  ;
+    color: white;
+    border-radius: 2rem ;
+    border: 2px solid white;
+    width: 90%;
+    height: 3rem;
+    margin:auto;
+    margin-bottom: 10%;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.circle {
+    margin-top: 15%;
+    border: solid 3px white;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.pseudo{
+    color: white;
+    text-align: center;
+    margin-bottom: 20%;
+    font-weight: bold;
+    font-size:1.2rem;
+    margin-top: 2%;
+   
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.resize {
+    width: 8%;
+    margin-right: 5%;
+    margin-left: 20%;
+}
+
+.button {
+    color:white;
+    font-family: 'Dancing Script',sans-serif;
+    border-radius: 2rem ;
+    border: 2px solid white;
+    width: 91.12%;
+    height: 3.25rem;
+    margin:auto;
+    margin-bottom: 10%;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    background-color: pink;
+}
+
+.download-button {
+    color:white;
+    font-family: 'Dancing Script',sans-serif;
+    border-radius: 2rem ;
+    border: 2px solid white;
+    width: 80%;
+    height: 2rem;
+    margin:auto;
+    margin-bottom: 20%;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    background-color: pink;
+    justify-content: center;
+}
+
+.pdf {
+    display:flex;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.pdf-photo {
+    border : 2px solid white;
+    border-radius: 1rem;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 15%;
+}
+
+.pdf-title {
+    margin:auto;
+    color:white;
+    margin-bottom: 15%;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.advise {
+    color: white;
+    text-align: center;
+    margin-bottom: 5%;
+    font-weight: bold;
+    font-size:1.2rem;
+    margin-top: 2%;
+}
+
+.pdf-display {
+    display: flex;
+    flex-direction: column;
+}
+span {
+    font-weight:bold;
+}
+
+.return-button {
+    color: pink;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 1rem;
+
+}
+
+.return {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+.footer {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    margin-top: 20%;
+}
+
+.footer-logo {
+    display:flex;
+    align-items: center;
+    width: 40%;
+   
+}
+
+.acenter {
+    display: flex;
+    justify-content: center;
+}
+
+.tooltip {
+    position: relative;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    display: inline-block;
+    top:130%;
+    left:0%;
+    transform: translateX(-60%);
+    background-color: pink;
+    color:white;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    margin-top: 20%;
+    visibility: visible;
+  }
+
+.story {
+    color : white;
+    text-align: justify;
+    font-family: 'Dancing Script', sans-serif  ;
+    font-size: 1.1;
+    margin-bottom: 5%;
+    margin-top: 7%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.portrait {
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+    border: solid white 2px;
+
+}
+
+
+
+/* design desktop version */
+
+@media only screen and (min-width: 600px) and (max-width: 767 px) {
+    .circle {
+        border: solid 5px white;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 10%;
+    
+    }
+    .link {
+        height: 6rem;
+        margin:auto;
+        margin-bottom: 10%;
+        font-size: 2.5rem;
+        border-radius: 3rem;
+    }
+
+    .pseudo{
+        margin-bottom: 10%;
+        font-weight: bold;
+        font-size:1.2rem;
+        margin-top: 0%;
+        font-size: 2rem;
+       
+    }
+
+    .resize {
+        width: 15%;
+    }
+
+
+    .button {
+        width: 90.5%;
+        height: 6.25rem;
+        font-size: 3rem;
+        border-radius: 4rem;
+    }
+
+    .advise {
+       
+        font-weight: bold;
+        font-size:2rem;
+        margin-top: 2%;
+    }
+
+    .app {
+        overflow-y: scroll;
+    }
+  }
+
+
+/* display pdf portrait page ipad version */
+  @media only screen and (min-width: 768px){
+    .app {
+        overflow-y: scroll;
+    }
+ 
+    .pdf-photo {
+        width: 70%;
+    }
+
+    .pdf-title {
+        font-size: 2rem;
+    }
+
+    .download-button {
+        height: 4rem;
+        font-size: 1.87rem;
+        margin-bottom: 15%;
+    }
+
+    .link {
+        height: 5rem;
+        width: 70%;
+        border-radius: 3rem;
+        font-size: 2.5rem;
+       
+    }
+
+    .button {
+        width: 70%;
+        font-size: 2.5rem;
+        height: 5rem;
+        border-radius: 3rem;
+        margin-bottom: 7%;
+    }
+
+    .return-button {
+        width: 6rem;
+        height: 2.5rem;
+        border-radius: 2rem;
+    }
+
+    .circle {
+        margin-top: 5%;
+        width: 25%;
+        height: 25%;
+    }
+
+    .pseudo {
+        margin-bottom: 9%;
+        font-size: 2rem;
+    }
+
+    .pdf{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        margin-top: 15%;
+        margin-bottom: 10%;
+    }
+
+    .story {
+        font-size: 1.5em;
+        margin-bottom: 5%;
+        margin-top: 15%;
+    }
+
+    .portrait {
+        width: 25%;
+    }
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        display: inline-block;
+        top:130%;
+        left:0%;
+        transform: translateX(-60%);
+        background-color: pink;
+        color:white;
+        text-align: center;
+        border-radius: 10px;
+        position: absolute;
+        z-index: 1;
+        font-size: 2rem;
+      }
+
+  }
+
+
+  @media (max-device-width: 768px) and (orientation: landscape) {
+    .app {     
+        overflow-y: scroll;
+        height: 1000px;
+    }
+
+    .circle {
+        margin-top: 15%;
+        margin-bottom: 1%;
+        width: 20%;
+        height: 20%;
+    }
+
+    .pseudo{
+       margin-top: 0%;
+       margin-bottom: 10%;
+       font-size: 2rem;
+    }
+
+    .link {
+        height: 5rem;
+        width: 70%;
+        margin:auto;
+        margin-bottom: 10%;
+        font-size: 2.2rem;
+        border-radius: 4rem ;
+    }
+
+    .button {
+        width: 70%;
+        height: 5rem;
+        font-size: 2.2rem;
+        border-radius: 4rem;
+    }
+
+    .download-button {
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+
+    .pdf-photo {
+        width: 70%;
+    }
+
+    .pdf-title {
+        font-size: 2rem;
+    }
+
+    .return-button {
+        height: 3rem;
+        width: 7rem;
+        border-radius: 2rem;
+        font-size: 1.3rem;
+    }
+
+    .footer {
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .story {
+        font-size: 1.5em;
+    }
+
+    .tooltip .tooltiptext {
+        font-size: 1.7rem;
+      }
+    
+  }
+
+  /* display desktop application to mobile version ==> 600px */
+
+  @media only screen and (min-width: 1280px) {
+    .app {
+        width: 30vw;
+        height: 100vh;
+        overflow-y: hidden;
+        background-color: pink;
+        margin-left: 50%;
+        transform: translateX(-50%);    
+    }
+
+    .link {
+        border-radius: 4rem ;
+        font-size: 2rem;
+    }
+
+    .button {
+        font-size: 2rem;
+    }
+
+    .circle {
+        margin-top: 15%;
+    }
+    
+  }
